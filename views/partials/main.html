@@ -1,0 +1,11 @@
+<div ng-include="'partials/navbar'"></div>
+
+<h2 class="text-center">{{mainTitle}}</h2>
+<div class="row">
+  <div class="thumbnail col-md-3 col-sm-6 col-xs-12" ng-repeat="photo in photos">
+    <a ng-href="/photo/{{photo.id}}"><img ng-src="{{photo.image_url}}" alt="{{photo.name}}" title="{{photo.name}}" class="img-thumbnail"></a>
+    <div class="caption">
+      <h4 title="{{photo.name}}" class="text-center well">{{photo.name | truncate:15}}</h4>
+    </div>
+  </div>
+</div>

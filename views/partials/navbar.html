@@ -1,0 +1,13 @@
+<div class="header" ng-controller="NavbarCtrl">
+	<div class="btn-group pull-right">
+	  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	    Category <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" role="menu">
+	    <li ng-repeat="category in categories">
+	    	<a ng-click="getPhotos(category.value)">{{category.name}}</a>
+	    </li>
+	  </ul>
+	</div>
+	<h3 class="text-muted">PhotoApp</h3>
+</div>

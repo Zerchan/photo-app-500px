@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<img ng-src="{{photoDetailInfo.image_url}}" alt="{{photoDetailInfo.name}}" title="{{photoDetailInfo.name}}" class="img-responsive center-block well">
+		<h4 title="{{photoDetailInfo.name}}" class="text-center">{{photoDetailInfo.name}}</h4>
+		<p class="text-center">{{photoDetailInfo.description}}</p>
+		<p class="text-center"><span class="glyphicon glyphicon-ok"></span> {{photoDetailInfo.positive_votes_count}}</p>
+		<p class="text-center"><span class="glyphicon glyphicon-heart"></span> {{photoDetailInfo.favorites_count}}</p>
+		<p class="text-center"><span class="glyphicon glyphicon-arrow-up"></span> {{photoDetailInfo.highest_rating}}</p>
+		<a href="" ng-click="goBack()" class="btn btn-primary btn-lg btn-block">BACK</a> 
+	</div>
+</div>
